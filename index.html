@@ -8,8 +8,23 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="viewport" content="initial-scale=1" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </head>
     <body>
+        <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+                if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 800);
+                    return false;
+                }
+            });
+        });
+        </script>
         <div id="header-view">
             <div id="header-image-container">
                 <img src="static/images/landing-face.png" id="header-image">
@@ -37,10 +52,36 @@
                 </div>
             </div>
             <div id="scroll-arrow-container">
-                <img src="static/images/scroll-arrow.png" id="scroll-arrow-image">
+               <a href="#content"><img src="static/images/scroll-arrow.png" id="scroll-arrow-image"></a>
             </div>
         </div>
         <div id="body-view">
+            <div id="content">
+                <div id="experience-header-container">
+                    <p id="experience-header">Experience</p>
+                </div>
+                <div id="esi-container">
+                    <div id="esi-content">
+                        <img src="static/images/express-scripts.png" id="esi-logo">
+                        <p id="esi-text">
+                            Express Scripts<br />
+                            Intern, Developer
+                        </p>
+                    </div>
+                </div>
+                <div id="acm-container">
+                    <div id="acm-content">
+                        <img src="static/images/sigdotcom.png" id="acm-logo">
+                        <p id="acm-text">
+                            ACM, SIG.com<br />
+                            Member
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-view">
+            <p id="footer-text">Dylan Elznic</p>
         </div>
     </body>
 </html>

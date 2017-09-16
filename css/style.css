@@ -44,7 +44,7 @@ body {
 #name-subtitle {
     width: 282px;
     font-size: 2em;
-    background-color: aliceblue;
+    background-color: #eaf4fc;
 }
 
 #icon-bar {
@@ -77,9 +77,107 @@ li {
     height: 30px;
 }
 
-#body-view {
-    height: 3000px;
-    background-color: aliceblue;
+#content {
+    position: relative;
+    height: 100vh;
+    color: white;
+    background-color: #eaf4fc;
+}
+
+#experience-header-container {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 10%;
+}
+
+#experience-header {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-150px);
+    font-size: 2.5em;
+    color: grey;
+}
+
+#esi-container {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 45%;
+}
+
+#esi-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 300px;
+}
+
+#esi-logo {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 180px;
+}
+
+#esi-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+    color: grey;
+}
+
+#acm-container {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 45%;
+}
+
+#acm-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 300px;
+}
+
+#acm-logo {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 180px;
+}
+
+#acm-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+    color: grey;
+}
+
+#footer-view {
+    position: relative;
+    height: 60px;
+    background-color: white;
+}
+
+#footer-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #efefef;
 }
 
 /**
@@ -92,7 +190,7 @@ li {
 }
 **/
 
-@media (min-width: 650px) {
+@media (min-width: 750px) {
 	#header-image-container {
 		display: inline-block;
 		float: left;
@@ -125,5 +223,41 @@ li {
     
     .name-text {
         font-size: 7em;
+    }
+    
+    #experience-header {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-300px);
+        font-size: 2.5em;
+        color: grey;
+    }
+    
+    #esi-container {
+		display: inline-block;
+		float: left;
+        width: 50%;
+        top: 20%;
+        transform: translateY(-50%);
+	}
+
+	#acm-container {
+		display: inline-block;
+		float: right;
+        width: 50%;
+        top: 20%;
+        transform: translateY(-50%);
+	}
+    
+    #esi-content {
+        left: unset;
+        right: 55px;
+        transform: translateY(-50%);
+    }
+    
+    #acm-content {
+        left: 55px;
+        transform: translateY(-50%);
     }
 }
