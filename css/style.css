@@ -68,7 +68,7 @@ li {
 
 #scroll-arrow-container {
     position: absolute;
-    bottom: 18px;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
 }
