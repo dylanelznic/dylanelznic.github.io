@@ -363,5 +363,6 @@ li {
     }
     .tl-item-content {
         left: 52%;
+        width: 48%;
     }
 }
