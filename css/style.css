@@ -74,6 +74,7 @@ li {
 }
 
 #scroll-arrow-image {
+    visibility: hidden;
     height: 30px;
 }
 
@@ -166,18 +167,102 @@ li {
     color: grey;
 }
 
+#timeline-header {
+    position: absolute;
+    bottom: 85vh;
+    left: 10%;
+    font-size: 4vh;
+    color: #98c4ea;
+}
+
+#timeline-line {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    height: 75vh;
+    width: 1px;
+    background-color: #bfd9f2;
+}
+
+.tl-item {
+    height: 25vh;
+    width: 100vw;
+}
+
+.tl-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 39%;
+    height: 100%;
+    width: 59%;
+}
+
+.tl-date {
+    font-size: 2.5vh;
+    padding-bottom: 6px;
+    color: #aed0ef;
+}
+
+.tl-text {
+    font-size: 3vh;
+    color: #98c4ea;
+}
+
+.tl-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: 20vw;
+    transform: translate(-210%, -50%);
+}
+
+#tl-esi {
+    position: absolute;
+    top: 10vh;
+}
+
+#tl-acm {
+    position: absolute;
+    top: 37.5vh;
+}
+
+#tl-mst {
+    position: absolute;
+    top: 65vh;
+}
+
 #footer-view {
     position: relative;
     height: 60px;
     background-color: white;
 }
 
-#footer-text {
+#footer-links {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%);
-    color: #efefef;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+#footer-links li {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+}
+
+#footer-links a {
+    text-decoration: none;
+    color: #ededed;
 }
 
 /**
@@ -225,6 +310,10 @@ li {
         font-size: 7em;
     }
     
+    #scroll-arrow-image {
+        visibility: visible;
+    }
+    
     #experience-header {
         position: absolute;
         bottom: 0;
@@ -259,5 +348,20 @@ li {
     #acm-content {
         left: 55px;
         transform: translateY(-50%);
+    }
+    .tl-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: auto;
+        width: 150px;
+        transform: translate(-150%, -50%);
+    }
+    #timeline-line {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .tl-item-content {
+        left: 52%;
     }
 }
