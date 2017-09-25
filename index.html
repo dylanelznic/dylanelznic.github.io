@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Dylan Elznic</title>
+        <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,6 +25,32 @@
                 }
             });
         });
+        </script>
+        <script>
+           $(window).scroll(function() {
+
+            if ($(this).scrollTop() > $(window).height() * 2 || $(window).width() < 750)
+             {
+                $('#jetpack').css({'visibility': 'hidden'});
+             }
+            else
+             {
+              $('#jetpack').css({'visibility': 'visible'});
+             }
+         });
+        </script>
+        <script>
+           $(window).scroll(function() {
+
+            if ($(this).scrollTop() > $(window).height() * 2 && $(window).width() > 750)
+             {
+                $('#agent').css({'visibility': 'visible'});
+             }
+            else
+             {
+              $('#agent').css({'visibility': 'hidden'});
+             }
+         });
         </script>
         <div id="header-view">
             <div id="header-image-container">
@@ -52,11 +79,12 @@
                 </div>
             </div>
             <div id="scroll-arrow-container">
-               <a href="#content"><img src="static/images/scroll-arrow.png" id="scroll-arrow-image"></a>
+               <a href="#content-1"><img src="static/images/scroll-arrow.png" id="scroll-arrow-image"></a>
             </div>
         </div>
         <div id="body-view">
-            <div id="content">
+            <div id="content-1">
+                <img id="jetpack" src="static/images/jetpack-animated.gif">
                 <div id="timeline-header"></div>
                 <div id="timeline-line"></div>
                 <div class="tl-item" id="tl-esi">
@@ -80,6 +108,13 @@
                     </div>
                     <img class="tl-img" src="static/images/Missouri-S&T_PrimaryLogo_DigitalMinerGreen.png">
                 </div>
+            </div>
+            <div id="content-2">
+
+            </div>
+            <div id="content-3">
+                <img id="agent" src="static/images/agent.png">
+
             </div>
         </div>
         <div id="footer-view">

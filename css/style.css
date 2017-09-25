@@ -3,8 +3,11 @@ body {
 }
 
 #header-view {
+    position: relative;
+    z-index: 1;
     height: 100vh;
     width: 100vw;
+    background-color: white;
 }
 
 #header-image-container {
@@ -78,7 +81,7 @@ li {
     height: 30px;
 }
 
-#content {
+#content-1 {
     position: relative;
     height: 100vh;
     color: white;
@@ -265,6 +268,41 @@ li {
     color: #ededed;
 }
 
+#jetpack {
+    visibility: hidden;
+    position: fixed;
+    z-index: 0;
+    left: 5%;
+    top: 30%;
+    height: 22vh;
+    width: auto;
+}
+
+#content-2 {
+    position: relative;
+    z-index: 1;
+    height: 60vh;
+    width: 100vw;
+    background-color: white;
+}
+
+#content-3 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #eaf4fc;
+}
+
+#agent {
+    visibility: hidden;
+    position: fixed;
+    z-index: 0;
+    right: 5%;
+    top: 0;
+    height: 50vh;
+    width: auto;
+}
+
 /**
 #divider-line {
     position: absolute;
@@ -364,5 +402,11 @@ li {
     .tl-item-content {
         left: 52%;
         width: 48%;
+    }
+    #jetpack {
+        visibility: visible;
+    }
+    #agent {
+        visibility: visible;
     }
 }
