@@ -286,6 +286,72 @@ li {
     background-color: white;
 }
 
+.bio-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+.col-1 {
+    position: relative;
+    height: 100%;
+    width: 33.33%;
+}
+
+.col-2 {
+    position: relative;
+    height: 100%;
+    width: 33.33%;
+}
+
+.col-3 {
+    position: relative;
+    height: 100%;
+    width: 33.33%;
+}
+
+.bio-header {
+    font-size: 5vh;
+    margin-bottom: 2vh;
+}
+
+.bio-text {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+
+.i-am {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 80%;
+    text-align: center;
+}
+
+.i-like {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 80%;
+    text-align: center;
+}
+
+.i-want {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 80%;
+    text-align: center;
+}
+
 #content-3 {
     position: relative;
     height: 100vh;
