@@ -272,7 +272,7 @@ li {
     visibility: hidden;
     position: fixed;
     z-index: 0;
-    left: 5%;
+    left: 10vw;
     top: 30%;
     height: 22vh;
     width: auto;
