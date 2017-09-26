@@ -273,7 +273,7 @@ li {
     position: fixed;
     z-index: 0;
     left: 5vw;
-    top: 30%;
+    top: 35%;
     height: 23vh;
     width: auto;
 }
@@ -374,7 +374,7 @@ li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4em;
+    font-size: 5vh;
     color: #98c4ea;
 }
 
