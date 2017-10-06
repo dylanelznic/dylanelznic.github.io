@@ -46,7 +46,7 @@ body {
   z-index: 1;
   position: relative;
   background-color: #333;
-  background-image: url('/static/images/background.png');
+  background-image: url('/static/images/background-small.jpg');
   background-size: cover;
 }
 .site-wrapper-inner {
