@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dylan Elznic</title>
+        <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="initial-scale=1" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+                if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 800);
+                    return false;
+                }
+            });
+        });
+        </script>
+        <script>
+           $(window).scroll(function() {
+
+            if ($(this).scrollTop() > $(window).height() * 1.0)
+            {
+                $('#jetpack').css({'position': 'absolute'});
+            }
+            else if ($(this).scrollTop() < $(window).height() * 1.0)
+            {
+                $('#jetpack').css({'position': 'fixed'});
+            }
+            else
+            {
+                $('#jetpack').css({'visibility': 'visible'});
+            }
+         });
+        </script>
+        <script>
+           $(window).scroll(function() {
+
+            if ($(this).scrollTop() > $(window).height() * 2 && $(window).width() > 750)
+             {
+                $('#agent').css({'visibility': 'visible'});
+             }
+            else
+             {
+              $('#agent').css({'visibility': 'hidden'});
+             }
+         });
+        </script>
+        <div id="header-view">
+            <div id="header-image-container">
+                <img src="static/images/landing-face.png" id="header-image">
+            </div>
+            <div id="header-words-container">
+                <div id="header-words">
+                    <p class="name-text">Dylan</p>
+                    <p class="name-text">Elznic</p>
+                    <p id="name-subtitle">Software Developer</p>
+                    <div id="icon-bar">
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/_dylanjoseph/" class="fa fa-instagram fa-lg" aria-hidden="true"></a>
+                            </li>
+                             <li>
+                                 <a href="https://github.com/dylanelznic" class="fa fa-github-alt fa-lg" aria-hidden="true"></a></li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/dylan-elznic/" class="fa fa-linkedin fa-lg" aria-hidden="true"></a>
+                            </li>
+                            <li>
+                                <a href="static/files/DylanElznicResume.pdf" class="fa fa-file-text-o fa-lg" aria-hidden="true"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="scroll-arrow-container">
+               <a href="#content-1"><img src="static/images/scroll-arrow.png" id="scroll-arrow-image"></a>
+            </div>
+        </div>
+        <div id="body-view">
+            <div id="content-1">
+                <img id="jetpack" src="static/images/jetpack-animated.gif">
+                <div id="timeline-header"></div>
+                <div id="timeline-line"></div>
+                <div class="tl-item" id="tl-esi">
+                    <div class="tl-item-content">
+                        <div class="tl-date">May 2017 - Present</div>
+                        <div class="tl-text">Express Scripts<br/>Developer/Intern</div>
+                    </div>
+                    <img class="tl-img" src="static/images/express-scripts.png">
+                </div>
+                <div class="tl-item" id="tl-acm">
+                    <div class="tl-item-content">
+                        <div class="tl-date">January 2017 - Present</div>
+                        <div class="tl-text">Association for Computing Machinery<br/>SIG.com Member</div>
+                    </div>
+                    <img class="tl-img" src="static/images/acm-logo.png">
+                </div>
+                <div class="tl-item" id="tl-mst">
+                    <div class="tl-item-content">
+                        <div class="tl-date">August 2014 - May 2018</div>
+                        <div class="tl-text">Missouri University of<br/>Science and Technology</div>
+                    </div>
+                    <img class="tl-img" src="static/images/Missouri-S&T_PrimaryLogo_DigitalMinerGreen.png">
+                </div>
+            </div>
+            <div id="content-2">
+                <div class="bio-wrapper">
+                    <div class="col-1">
+                        <div class="i-am">
+                            <p class="bio-header"></p>
+                            <p class="bio-text">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="i-like">
+                            <p class="bio-header"></p>
+                            <p class="bio-text">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="i-want">
+                            <p class="bio-header"></p>
+                            <p class="bio-text">
+                               </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-3">
+                <img id="agent" src="static/images/agent.png">
+                <p class="construction">Under Construction!</p>
+            </div>
+        </div>
+        <div id="footer-view">
+            <ul id="footer-links">
+                <li><a href="https://www.instagram.com/_dylanjoseph/">Instagram</a></li>
+                <li><a href="https://github.com/dylanelznic" >Github</a></li>
+                <li><a href="https://www.linkedin.com/in/dylan-elznic/">Linkedin</a></li>
+                <li><a href="static/files/DylanElznicResume.pdf">Resume</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
