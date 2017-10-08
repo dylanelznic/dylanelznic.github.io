@@ -54,7 +54,6 @@ body {
   vertical-align: top;
 }
 .cover-container {
-  margin-top: 5em;
   margin-right: auto;
   margin-left: auto;
 }
@@ -144,6 +143,22 @@ body {
   margin: 0;
 }
 
+@media (max-width: 40em) {
+  
+  .site-wrapper {
+    height: 50vh;
+    min-height: 50vh;
+  }
+  
+  .cover-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
+
 /*
  * Cover
  */
@@ -204,6 +219,15 @@ body {
  * Body Content
  */
 
+@media (max-width: 576px) {
+  
+  .hidden-xs {
+    height: 0;
+    width: 0;
+  }
+  
+}
+
 .body-content {
   background-color: white;
   color: #333;
@@ -226,17 +250,27 @@ body {
   width: 100%;
 }
 
-.jetpack-container {
-  //background-color: blue;
+.jetpack-img {
+  position: fixed;
+  visibility: hidden;
 }
 
-.jetpack-img {
-  position: absolute;
-  top: 50%;
-  right: 20%;
-  transform: translateY(-50%);
-  height: 70%;
-  width: auto;
+@media (min-width: 576px) {
+  
+  .jetpack-container {
+    //background-color: blue;
+  }
+
+  .jetpack-img {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    height: 70%;
+    width: auto;
+    visibility: visible;
+  }
+
 }
 
 .about-text-container {
@@ -264,6 +298,15 @@ body {
   position: relative;
   background-color: #333;
   color: #fff;
+}
+
+@media (max-width: 576px) {
+  
+  .skills-container {
+    font-size: 0.8em;
+    padding: 5px;
+  }
+
 }
 
 .skills-content {
@@ -328,7 +371,7 @@ body {
  */
 
 .experience-container {
-  height: 90vh;
+  height: 140vh;
   width: 100vw;
   background-color: #fff;
 }
@@ -358,7 +401,7 @@ body {
 .experience-icon {
   position: absolute;
   top: 50%;
-  right: 50%;
+  right: 80%;
   transform: translate(50%, -50%);
   height: auto;
   width: 70px;
@@ -435,12 +478,27 @@ body {
 }
 
 .agent-img {
-  position: fixed;
-  top: 0;
-  right: 5%;
-  z-index: 0;
-  height: auto;
-  width: 15%;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+@media (min-width: 576px) {
+  
+  .agent-img {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    right: 5%;
+    z-index: 0;
+    height: auto;
+    width: 15%;
+  }
+  
+  .experience-icon {
+    right: 50%;
+  }
+  
 }
 
 /*
