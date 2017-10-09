@@ -378,7 +378,12 @@ body {
  * Experience
  */
 
+.experience-row-container {
+  padding: 20px;
+}
+
 .experience-logo-container {
+  height: auto;
   padding: 2vh;
 }
 
@@ -386,23 +391,8 @@ body {
   width: 20vw;
 }
 
-.esi-container {
-  padding: 5%;
-  //background-color: burlywood;
-}
-
-.esi-content {
-  //background-color: antiquewhite;
-}
-
-.acm-container {
-  padding: 5%;
-  //background-color: aquamarine;
-}
-
-.mst-container {
-  padding: 5%;
-  //background-color: beige;
+.experience-header-row {
+  margin: 0;
 }
 
 /*
