@@ -66,7 +66,7 @@
           <div class="about-text-container col-xs-8 col-sm-6">
             <p class="about-text">
               My name is Dylan Elznic, and I am a software developer. I am passionate about doing all things with a sense of creativity and innovation. I like to build and design things that I hope will someday change the world.
-              <br/><br/><br/>
+              <br/><br/><br id="not-for-mobile"/>
               <em>
                 <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;
                 <a href="mailto:dylan.elznic@gmail.com" target="_blank">dylan.elznic@gmail.com</a>
@@ -137,101 +137,69 @@
       </div>
       
       <div class="experience-container">
-        <div class="experience-content row">
-          <div class="experience-content-inner col-xs-12 col-sm-9">
-
-            <div class="experience-esi">
+        <div class="experience-content">
+          <div class="esi-container col-sm-4">
+            <div class="esi-content">
               <div class="experience-header row">
-                <div class="col-1"></div>
-                <div class="experience-icon-contianer col-1">
-                  <img class="experience-icon" src="static/images/esi.png">
+                <div class="experience-logo-container col-sm-4">
+                  <img class="experience-logo" src="static/images/esi.png">
                 </div>
-                <div class="experience-title-container col-6 text-left">
-                  <p class="experience-title"><b>Express Scripts</b>
-                  <br/>Intern, Software Developer</p>
-                </div>
-                <div class="experience-date-container col-4 text-right">
-                  <p class="experience-date">May 2017 - Present
-                  <br/>St. Louis, MO</p>
-                </div>
-              </div>
-              <div class="experience-body row">
-                <div class="col-2"></div>
-                <div class="experience-list col-8 text-left">
+                <div class="experience-title col-sm-4">
                   <p>
-                    Software Developer Intern on Express Scripts' Automation Engineering Team. Primary developer for multiple projects with the goal of creating the most value possible through the automation of various functions. Engaged in full-stack development through the use of multiple font-end and back-end technologies.
+                    <b>Express Scripts</b>
+                    <br/>Intern, Software Developer
                   </p>
                 </div>
-              </div>
-            </div>
-
-            <div class="experience-acm">
-              <div class="experience-header row">
-                <div class="col-1"></div>
-                <div class="experience-icon-contianer col-1">
-                  <img class="experience-icon" src="static/images/acm.png">
-                </div>
-                <div class="experience-title-container col-6 text-left">
-                  <p class="experience-title"><b>Association for Computing Machinery</b>
-                  <br/>Member</p>
-                </div>
-                <div class="experience-date-container col-4 text-right">
-                  <p class="experience-date">January 2017 - Present
-                  <br/>Rolla, MO</p>
-                </div>
-              </div>
-              <div class="experience-body row">
-                <div class="col-2"></div>
-                <div class="experience-list col-8 text-left">
+                <div class="experience-date col-sm-4">
                   <p>
-                    Member of two Special Interest Groups; SIG.com and SIG-Competition. SIG.com is responsible for the creation and maintenence of ACM's overarching website. SIG-Competition focuses on practicing coding challenges that may be found in various competitions in order to further sharpen members' programming skills.
+                    May 2017 - Present
+                    <br/>St. Louis, MO
                   </p>
                 </div>
               </div>
             </div>
-
-            <div class="experience-mst">
-              <div class="experience-header row">
-                <div class="col-1"></div>
-                <div class="experience-icon-contianer col-1">
-                  <img class="experience-icon" src="static/images/mst.png">
-                </div>
-                <div class="experience-title-container col-6 text-left">
-                  <p class="experience-title"><b>Missouri University of Science and Technology</b>
-                  <br/>Student</p>
-                </div>
-                <div class="experience-date-container col-4 text-right">
-                  <p class="experience-date">August 2014 - May 2018
-                  <br/>Rolla, MO</p>
-                </div>
-              </div>
-              <div class="experience-body row">
-                <div class="col-2"></div>
-                <div class="experience-list col-9 text-left">
-                  <p id="course-work-header">
-                    Relavent Coursework:
-                  </p>
-                  <div class="course-work-container row">
-                    <ul class="col-sm-6">
-                      <li>Software Engineering</li>
-                      <li>Software Systems Development</li>
-                      <li>Operating Systems</li>
-                      <li>Data Mining</li>
-                    </ul>
-                    <ul class="col-sm-6">
-                      <li>Analysis of Algorithms</li>
-                      <li>Data Structures</li>
-                      <li>File Structures and Database Systems</li>
-                      <li>Programming Languages and Translators</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
           </div>
-          <div class="experience-agent hidden-xs col-sm-3">
-            <img class="agent-img" src="static/images/agent.png">
+          <div class="acm-container col-sm-4">
+            <div class="acm-content">
+              <div class="experience-header row">
+                <div class="experience-logo-container col-sm-4">
+                  <img class="experience-logo" src="static/images/acm.png">
+                </div>
+                <div class="experience-title col-sm-4">
+                  <p>
+                    <b>Association for Computing Machinery</b>
+                    <br/>Member
+                  </p>
+                </div>
+                <div class="experience-date col-sm-4">
+                  <p>
+                    January 2017 - Present
+                    <br/>Rolla, MO
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mst-container col-sm-4">
+             <div class="mst-content">
+              <div class="experience-header row">
+                <div class="experience-logo-container col-sm-4">
+                  <img class="experience-logo" src="static/images/mst.png">
+                </div>
+                <div class="experience-title col-sm-4">
+                  <p>
+                    <b>Missouri University of Science and Technology</b>
+                    <br/>Student
+                  </p>
+                </div>
+                <div class="experience-date col-sm-4">
+                  <p>
+                    August 2014 - May 2018
+                    <br/>Rolla, MO
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

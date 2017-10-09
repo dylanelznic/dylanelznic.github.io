@@ -273,6 +273,14 @@ body {
 
 }
 
+@media (min-width: 375px) {
+  
+  #not-for-mobile {
+    content: '';
+  }
+  
+}
+
 .about-text-container {
   //background-color: green;
 }
@@ -370,135 +378,31 @@ body {
  * Experience
  */
 
-.experience-container {
-  height: 140vh;
-  width: 100vw;
-  background-color: #fff;
+.experience-logo-container {
+  padding: 2vh;
 }
 
-.experience-content {
-  height: 100%;
-  width: 100%;
-  margin: 0;
+.experience-logo {
+  width: 20vw;
 }
 
-.experience-content-inner {
-  height: 100%;
-  padding: 2%;
-  //background-color: aquamarine;
-}
-
-.experience-header {
-  height: 30%;
-  margin: 0;
-}
-
-.experience-icon-contianer {
-  height: 100%;
-  //background-color: cadetblue;
-}
-
-.experience-icon {
-  position: absolute;
-  top: 50%;
-  right: 80%;
-  transform: translate(50%, -50%);
-  height: auto;
-  width: 70px;
-}
-
-.experience-title-container {
-  height: 100%;
-  //background-color: darkturquoise;
-}
-
-.experience-title {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.experience-date-container {
-  height: 100%;
-  //background-color: darkcyan;
-}
-
-.experience-date {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-}
-
-.experience-body {
-  height: 75%;
-  margin: 0;
+.esi-container {
+  padding: 5%;
   //background-color: burlywood;
 }
 
-.experience-list {
-  padding: 15px;
-  //background-color: darksalmon;
-}
-
-.experience-esi {
-  height: 25%;
-  width: 100%;
-  margin-top: 4.5%;
-  margin-bottom: 5%;
-  //background-color: azure;
-}
-
-.experience-acm {
-  height: 25%;
-  width: 100%;
-  margin-bottom: 5%;
-  //background-color: beige;
-}
-
-.experience-mst {
-  height: 25%;
-  width: 100%;
-  //background-color: darkseagreen;
-}
-
-.course-work-container {
-  padding-left: 6%;
+.esi-content {
   //background-color: antiquewhite;
 }
 
-#course-work-header {
-  margin-bottom: 5px;
+.acm-container {
+  padding: 5%;
+  //background-color: aquamarine;
 }
 
-.experience-agent {
-  height: 100%;
-  padding: 0;
+.mst-container {
+  padding: 5%;
   //background-color: beige;
-}
-
-.agent-img {
-  visibility: hidden;
-  height: 0;
-  width: 0;
-}
-
-@media (min-width: 576px) {
-  
-  .agent-img {
-    visibility: visible;
-    position: fixed;
-    top: 0;
-    right: 5%;
-    z-index: 0;
-    height: auto;
-    width: 15%;
-  }
-  
-  .experience-icon {
-    right: 50%;
-  }
-  
 }
 
 /*
