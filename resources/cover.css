@@ -445,7 +445,7 @@ body {
   .agent-img {
     display: block;
     position: fixed;
-    top: -6px;
+    top: -2px;
     right: 2%;
     width: 15vw;
     max-width: 255px;
@@ -458,7 +458,7 @@ body {
  */
 
 .contact-container {
-  height: 40vh;
+  height: 20vh;
   min-height: 260px;
   background-color: #333;
 }
