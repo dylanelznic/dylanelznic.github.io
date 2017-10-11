@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-  color: #000;
+  color: #696969;
 }
 
 /* Custom default button */
@@ -46,7 +46,7 @@ body {
   z-index: 1;
   position: relative;
   background-color: #333;
-  background-image: url('/static/images/background-small.jpg');
+  background-image: url('/static/images/background-small-dark.jpg');
   background-size: cover;
 }
 .site-wrapper-inner {
@@ -231,7 +231,7 @@ body {
 
 .body-content {
   background-color: white;
-  color: #333;
+  color: #696969;
 }
 
 /*
@@ -310,8 +310,8 @@ body {
   padding: 60px;
   z-index: 1;
   position: relative;
-  background-color: #333;
-  color: #fff;
+  background-color: #f7f7f7;
+  color: #696969;
 }
 
 @media (max-width: 576px) {
@@ -437,6 +437,7 @@ body {
   
   #second-course-list {
     margin-top: 40px;
+    padding: 0;
   }
   
 }
@@ -446,7 +447,7 @@ body {
   .agent-img {
     display: block;
     position: fixed;
-    top: -2px;
+    top: -60px;
     right: 2%;
     width: 15vw;
     max-width: 255px;
@@ -455,16 +456,101 @@ body {
 }
   
 /*
- * Contact/Map
+ * Contact
  */
 
 .contact-container {
-  height: 20vh;
-  min-height: 260px;
+  padding: 50px;
+  color: white;
+  background-color: #f7f7f7;
+}
+
+section#contact {
+    background-color: #222;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#contact .section-heading {
+  color: #696969;
+  padding-bottom: 20px;
+}
+
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+    height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+
+section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact .text-danger {
+    color: #e74c3c;
+}
+
+.btn {
+  color: #fff;
+  background-color: #696969;
+}
+
+.btn:hover {
+  background-color: #bbb;
+  cursor: pointer;
+}
+
+/*
+ * Map
+ */
+
+.map-container {
+  height: 120px;
+  min-height: 100px;
   background-color: #333;
 }
 
 .google-map {
   height: 100%;
-  width:100%;
+  width: 100%;
 }
