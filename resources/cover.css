@@ -387,6 +387,7 @@ body {
 .experience-container {
   width: 100%;
   padding: 30px 0px 30px 0px;
+  margin: 0;
 }
 
 .experience-row-container {
