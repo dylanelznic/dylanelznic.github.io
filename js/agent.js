@@ -4,5 +4,5 @@ $(window).scroll(function() {
     $('.agent-img').css({'visibility': 'visible'});
   } else {
     $('.agent-img').css({'visibility': 'hidden'});
-  }
+  } 
 });

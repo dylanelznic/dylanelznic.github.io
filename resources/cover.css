@@ -448,11 +448,12 @@ body {
   .agent-img {
     display: block;
     position: fixed;
-    top: -60px;
     right: 2%;
+    bottom: 0;
     width: 15vw;
     max-width: 255px;
     min-width: 200px;
+    padding-bottom: 60vh;
   }
 }
   
