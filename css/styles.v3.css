@@ -11,18 +11,6 @@ img {
   object-fit: cover;
 }
 
-@media only screen and (min-width: 824px) {
-  .mobile-image {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 824px) {
-  .desktop-image {
-    display: none;
-  }
-}
-
 .footer {
   position: absolute;
   bottom: 0;
@@ -33,14 +21,33 @@ img {
 }
 
 .footer a {
-  margin-left: 16px;
   color: #26314c;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   cursor: pointer;
 }
 
+.footer a:not(:first-of-type) {
+  margin-left: 16px;
+}
+
 .footer a:hover {
   color: #d695d4;
   transition: color 0.5s;
+}
+
+@media only screen and (min-width: 825px) {
+  .mobile-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 824px) {
+  .desktop-image {
+    display: none;
+  }
+
+  .footer a {
+    font-size: 13px;
+  }
 }
